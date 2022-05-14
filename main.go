@@ -1,1 +1,5 @@
-package go_blog_boke
+package main
+
+func main() {
+
+}
