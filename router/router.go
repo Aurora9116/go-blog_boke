@@ -20,6 +20,11 @@ func Start() {
 	r.GET("/register", controller.GoRegister)
 	r.POST("/register", controller.Register)
 
+	r.GET("/post_index", controller.GoPostIndex)
+	r.POST("/post", controller.AddPost)
+	r.GET("/post", controller.GoAddPost)
+	r.GET("/post_index/detail", controller.PostDetail)
+
 	if err := r.Run(); err != nil {
 		fmt.Println(err)
 	}
